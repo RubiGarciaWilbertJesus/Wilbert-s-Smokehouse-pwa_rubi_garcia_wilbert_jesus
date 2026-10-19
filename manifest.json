@@ -12,19 +12,19 @@
   "theme_color": "#0e6b5c",
   "icons": [
     {
-      "src": "icons/icon.svg",
+      "src": "icons/LogoSMOKEHOUSE.png",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "icons/icon-192.png",
+      "src": "icons/LogoSMOKEHOUSE.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
-    {
-      "src": "icons/icon-512.png",
+      {
+        "src": "icons/LogoSMOKEHOUSE.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"

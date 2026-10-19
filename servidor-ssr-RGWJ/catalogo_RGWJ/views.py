@@ -6,10 +6,21 @@ from django.shortcuts import render
 # pero para ENTENDER qué es SSR no necesitamos base de datos: lo importante
 # es que estos datos se insertan en el HTML *antes* de enviarlo al navegador.
 PRODUCTOS = [
-    {"nombre": "Playera UT Hermosillo", "precio": 250, "stock": 40},
-    {"nombre": "Sudadera TIC", "precio": 480, "stock": 15},
-    {"nombre": "Taza PWA", "precio": 120, "stock": 60},
-    {"nombre": "Mochila 10mo cuatrimestre", "precio": 690, "stock": 8},
+  {"id": 1, "nombre": "Brisket (250 g)", "categoria": "Ahumados", "precio": 230},
+  {"id": 2, "nombre": "Costillas de cerdo (½ rack)", "categoria": "Ahumados", "precio": 260},
+  {"id": 3, "nombre": "Pulled pork (250 g)", "categoria": "Ahumados", "precio": 180},
+  {"id": 4, "nombre": "Salchicha ahumada", "categoria": "Ahumados", "precio": 120},
+  {"id": 5, "nombre": "Pollo ahumado (½)", "categoria": "Ahumados", "precio": 170},
+  {"id": 6, "nombre": "Sándwich de brisket", "categoria": "Sándwiches y platos", "precio": 160},
+  {"id": 7, "nombre": "Sándwich de pulled pork", "categoria": "Sándwiches y platos", "precio": 140},
+  {"id": 8, "nombre": "Platón para 2", "categoria": "Sándwiches y platos", "precio": 520},
+  {"id": 9, "nombre": "Tacos de brisket (3)", "categoria": "Sándwiches y platos", "precio": 130},
+  {"id": 10, "nombre": "Papa rellena de brisket", "categoria": "Sándwiches y platos", "precio": 140},
+  {"id": 11, "nombre": "Mac & cheese", "categoria": "Guarniciones", "precio": 60},
+  {"id": 12, "nombre": "Coleslaw", "categoria": "Guarniciones", "precio": 40},
+  {"id": 13, "nombre": "Frijoles BBQ", "categoria": "Guarniciones", "precio": 45},
+  {"id": 14, "nombre": "Elote asado", "categoria": "Guarniciones", "precio": 40},
+  {"id": 15, "nombre": "Pan de maíz", "categoria": "Guarniciones", "precio": 35}
 ]
 
 
