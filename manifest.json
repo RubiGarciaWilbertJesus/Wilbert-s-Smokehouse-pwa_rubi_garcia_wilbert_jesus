@@ -1,8 +1,8 @@
 {
   "id": "./",
-  "name": "Tienda Escolar",
-  "short_name": "Tienda",
-  "description": "PWA de ventas de práctica para la Unidad 2",
+  "name": "Wilbert's Smokehouse",
+  "short_name": "Smokehouse",
+  "description": "Ahumadero BBQ estilo Texas: carnes cocinadas 'low & slow' (baja temperatura, 8 a 12 horas) con humo de leña de mezquite.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
@@ -12,19 +12,19 @@
   "theme_color": "#0e6b5c",
   "icons": [
     {
-      "src": "icons/LogoSMOKEHOUSE.png",
+      "src": "icons/icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "icons/LogoSMOKEHOUSE.png",
+      "src": "icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
-      {
-        "src": "icons/LogoSMOKEHOUSE.png",
+    {
+      "src": "icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
