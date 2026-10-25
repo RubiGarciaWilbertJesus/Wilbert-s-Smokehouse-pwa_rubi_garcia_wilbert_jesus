@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Notification.requestPermission().then((permiso) => {
       if (permiso === "granted") {
         // Creamos una notificación de prueba. title, luego un objeto con opciones.
-        new Notification("Tienda Escolar", {
+        new Notification("Wilbert's Smokehouse", {
           body: "¡Listo! Te avisaremos cuando haya nuevas ofertas.",
           icon: "icons/icon.svg",
         });
