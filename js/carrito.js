@@ -28,6 +28,7 @@ function agregarAlCarrito(producto) {
 
   guardarCarrito(carrito);
   pintarCarrito();
+  notificarProductoAgregado(producto);
 }
 
 // Sube o baja la cantidad de un producto ya en el carrito con los botones +/-;
@@ -41,12 +42,14 @@ function cambiarCantidad(id, delta) {
   const actualizado = item.cantidad <= 0 ? carrito.filter((item) => item.id !== id) : carrito;
 
   guardarCarrito(actualizado);
+  if (item.cantidad <= 0) permitirNuevaNotificacionProducto(id);
   pintarCarrito();
 }
 
 // Quita un producto del carrito sin importar su cantidad
 function quitarDelCarrito(id) {
   const carrito = leerCarrito().filter((item) => item.id !== id);
+  permitirNuevaNotificacionProducto(id);
   guardarCarrito(carrito);
   pintarCarrito();
 }
@@ -118,8 +121,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btn-sincronizar").addEventListener("click", sincronizarCarrito);
 
   // Estos dos eventos del navegador avisan cuando se pierde o regresa la conexión
-  window.addEventListener("online", sincronizarCarrito);
+  window.addEventListener("online", () => {
+    sincronizarCarrito();
+    if (leerCarrito().length > 0) {
+      notificarCarritoSincronizado();
+    }
+  });
   window.addEventListener("offline", () => {
     document.getElementById("carrito-mensaje").textContent = "Se perdió la conexión.";
+    mostrarAvisoSincronizacion("Sin conexión. Tu carrito sigue guardado en este dispositivo.");
   });
 });
