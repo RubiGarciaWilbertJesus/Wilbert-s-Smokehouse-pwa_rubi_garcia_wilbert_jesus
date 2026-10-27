@@ -9,8 +9,8 @@
 // enlace "Compartir → Insertar un mapa" de Google Maps para ese lugar.
 const SUCURSAL = {
   nombre: "Wilbert's Smokehouse",
-  lat: 29.001871,
-  lon: -110.934394,
+  lat: 29.002302,
+  lon: -110.933651,
 };
 
 // Fórmula de Haversine: distancia en línea recta (km) entre dos puntos.
