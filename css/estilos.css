@@ -575,3 +575,52 @@ footer { background:#1c1917; border-top:3px solid #991b1b; color:#dfc9ab; paddin
   pointer-events: none;
 }
 .aviso-sincronizacion[hidden] { display: none; }
+/* Tarjetas del menú: lectura y controles cómodos en pantallas táctiles. */
+@media (max-width: 700px) {
+  #catalogo { gap: 18px; }
+  #catalogo .producto { min-width: 0; border-radius: 18px; }
+  #catalogo .producto__foto { height: auto; aspect-ratio: 4 / 3; }
+  #catalogo .producto strong {
+    margin: 18px 16px 8px;
+    font-size: 17px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+  #catalogo .producto .precio { margin: 0 16px; font-size: 25px; }
+  #catalogo .producto__categoria {
+    left: 12px;
+    bottom: 12px;
+    max-width: calc(100% - 24px);
+    padding: 7px 10px;
+    font-size: 10px;
+    line-height: 1.4;
+    letter-spacing: .5px;
+  }
+  #catalogo .producto__stock {
+    margin: 10px 16px 18px;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  #catalogo .producto button {
+    width: calc(100% - 32px);
+    min-height: 48px;
+    margin: auto 16px 16px;
+    padding: 12px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .menu-filters { gap: 8px; }
+  .menu-filters .filter { min-height: 44px; padding: 10px 14px; }
+}
+@media (max-width: 520px) {
+  #catalogo { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  #catalogo .producto__foto { aspect-ratio: 16 / 10; }
+  #catalogo .producto strong { font-size: 19px; }
+  #catalogo .producto .precio { font-size: 28px; }
+  #catalogo .producto button { font-size: 15px; }
+  #menu.menu-section { padding: 18px 0 32px; }
+}
+@media (hover: none) {
+  #catalogo .producto:hover { transform: none; }
+  #catalogo .producto:hover .producto__foto { transform: none; }
+}
