@@ -1,0 +1,6 @@
+# Conserva los mismos saltos de linea en Git y en el precache de Workbox.
+*.css text eol=lf
+*.html text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.svg text eol=lf
